@@ -4,7 +4,18 @@
 // };
 
 // But instead we're going to implement it from scratch:
-var getElementsByClassName = function(className
-) {
-  // your code here
+let getElementsByClassName = function(className) {
+  let results = [];
+  let parent = document.body;
+  let recurser = function(root) {
+    let children = root.children;
+    if (root.classList.contains(className)) {
+      results.push(root);
+    }
+    for (let i = 0; i < children.length; i++) {
+      recurser(children[i]);
+    }
+  }
+  recurser(parent);
+  return results;
 };
