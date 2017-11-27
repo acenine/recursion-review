@@ -5,7 +5,6 @@
 
 let stringifyJSON = function(obj) {
   // your code goes here
-  console.log(obj);
   let type = typeof obj;
   if (obj === undefined || type === 'function') {
     return undefined;
