@@ -16,6 +16,6 @@ let getElementsByClassName = function(className) {
       recurser(children[i]);
     }
   }
-  recurser(parent) ;
+  recurser(parent ) ;
   return results;
 };

@@ -39,7 +39,7 @@ let stringifyJSON = function(obj) {
       }
       string += '"' + key + '"' + ':' + value + ',';
     }
-    if (string[string.length -1] === ',') {
+    if (string[string.length-1] === ',') {
       string = string.slice(0, string.length - 1);
     }
     return string + '}';

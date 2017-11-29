@@ -63,7 +63,7 @@ let parseJSON = function(json) {
   let makeString = function() {};
   let makeObject = function() {};
   let makeTrue = function() {
-    chop(4);
+    chop(4 );
     return true;
   };
   let makeFalse = function() {
