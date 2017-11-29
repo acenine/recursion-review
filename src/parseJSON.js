@@ -8,7 +8,7 @@ let parseJSON = function(json) {
     toParse = toParse.slice(num, toParse.length);
   };
   let discardWhitespace = function() {
-    toParse.trim();  
+    toParse.trim();
   };
   let checkFirst = function() {
     discardWhitespace();
@@ -48,14 +48,14 @@ let parseJSON = function(json) {
     chop(1);
     let newarr = [];
     if (checkFirst === ']') {
-      return newarr;  
+      return newarr;
     }
     newarr.push(determine());
     if (checkfirst === ',') {
-      
+
     }
 
-    while (checkFirst)
+    while (checkFirst) {};
 
 
 
@@ -74,6 +74,6 @@ let parseJSON = function(json) {
     chop(4);
     return null;
   };
-  
+
   determine();
 };

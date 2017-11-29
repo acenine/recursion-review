@@ -11,10 +11,10 @@ let stringifyJSON = function(obj) {
   }
   if (obj === null) {
     return 'null';
-  } 
+  }
   else if (type === 'string') {
     return '"' + obj + '"';
-  } 
+  }
   else if (Array.isArray(obj)) {
     if (obj.length === 0) {
       return '[]';
@@ -27,7 +27,7 @@ let stringifyJSON = function(obj) {
     return string + ']';
   }
   else if (type === 'object') {
-    
+
     if (Object.keys(obj).length === 0) {
       return '{}';
     }
@@ -39,7 +39,7 @@ let stringifyJSON = function(obj) {
       }
       string += '"' + key + '"' + ':' + value + ',';
     }
-    if (string[string.length - 1] === ',') {
+    if (string[string.length -1] === ',') {
       string = string.slice(0, string.length - 1);
     }
     return string + '}';
